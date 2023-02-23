@@ -1,0 +1,9 @@
+all: build_executable
+
+CC = gcc
+SRC = main.c school.c
+
+build_executable:
+	${CC} ${SRC} -o school
+
+
