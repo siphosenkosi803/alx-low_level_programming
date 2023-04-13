@@ -1,8 +1,9 @@
 #include "search_algos.h"
 /**
-*@array: pointer
+*binary_search - searches for a particular value
+*@array: a pointer to the init element to search in
 *@size: number of lelements in array
-*@value: value
+*@value: this is the value to search
 *Return: initial index
 */
 int binary_search(int *array, size_t size, int value)
@@ -11,6 +12,7 @@ int binary_search(int *array, size_t size, int value)
 	size_t end_p = size - 1;
 	size_t mid;
 	size_t b;
+
 	if (array == NULL)
 	{
 		return (-1);
@@ -39,3 +41,4 @@ int binary_search(int *array, size_t size, int value)
 	}
 	return (-1);
 }
+
